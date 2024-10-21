@@ -49,26 +49,4 @@ function isLoggedIn() {
             </div>
             <?php if (isLoggedIn()): ?>
                 <span class="navbar-text">
-                    Bonjour, <?php echo $_SESSION['user']['first_name']; ?> <?php echo $_SESSION['user']['last_name']; ?>
-                </span>
-            <?php endif; ?>
-        </div>
-    </nav>
-
-    <div class="container mt-5">
-        <div class="jumbotron">
-            <h1 class="display-4">Salut, je suis [Ton Nom]!</h1>
-            <p class="lead">Voici mon CV interactif. Explorez les différentes sections pour en savoir plus sur moi et mes projets.</p>
-        </div>
-    </div>
-    
-    <footer class="bg-light text-center py-4">
-        <p>&copy; 2024 Mon CV. Tous droits réservés.</p>
-    </footer>
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="js/scripts.js"></script>
-</body>
-</html>
+                    Bonjour, <?php echo $_SESSION['user']['first_name']; ?> <?php echo $_SESSION['user']['last_name'];
