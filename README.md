@@ -13,15 +13,14 @@ CV-PHP/ ├── app/ │ ├── css/ │ │ └── style.css │ ├─
 ## Installation
 
 ### Étape 1 : Cloner le dépôt
-```sh
 git clone https://github.com/Giovanni31000/CV-php.git
 cd Ynov-PhP
-Étape 2 : Configurer le fichier .env
+
+### Étape 2 : Configurer le fichier .env
 Créez un fichier .env à la racine du projet avec le contenu suivant :
 
 env
 
-Copier
 DB_HOST=db
 DB_DATABASE=cv_db
 DB_USERNAME=root
@@ -36,28 +35,20 @@ APP_DEBUG=true
 APP_KEY=ton_cle_application
 
 PORT=80
-Étape 3 : Démarrer les services Docker
+### Étape 3 : Démarrer les services Docker
 Assurez-vous que Docker Desktop est en cours d'exécution, puis lancez les services avec la commande suivante :
 
-sh
-
-Copier
 docker-compose up --build
-Étape 4 : Accéder à votre projet
+### Étape 4 : Accéder à votre projet
 Ouvrez votre navigateur et allez à http://localhost pour voir le site web.
 
-Accédez à Adminer à http://localhost:8080 pour gérer la base de données.
+### Étape 5 : Configurer la base de données
+Utilisez Adminer pour vous connecter à MariaDB et créer les tables nécessaires pour les utilisateurs, les projets...
 
-Étape 5 : Configurer la base de données
-Utilisez Adminer pour vous connecter à MariaDB et créer les tables nécessaires pour les utilisateurs, les projets, etc.
-
-Étape 6 : Développement PHP
+### Étape 6 : Développement PHP
 Ajoutez les fonctionnalités PHP nécessaires pour l'authentification, la gestion de CV, les projets, etc.
 
 Commiter et pusher les modifications
-sh
-
-Copier
 git add .
 git commit -m "Initial commit with Docker setup"
 git push origin main
