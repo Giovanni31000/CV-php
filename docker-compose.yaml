@@ -7,12 +7,14 @@ services:
       - "80:80"
     volumes:
       - ./services/nginx/nginx.conf:/etc/nginx/conf.d/nginx.conf
-      - ../CV-php:/app
+      - ./app:/app
 
   app:
-    build: services/php
+    build:
+      context: ./services/php
+      dockerfile: Dockerfile
     volumes:
-      - ../CV-php:/app
+      - ./app:/app
     depends_on:
       - db
 
