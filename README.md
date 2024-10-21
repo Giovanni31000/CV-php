@@ -14,7 +14,7 @@ CV-PHP/ ├── app/ │ ├── css/ │ │ └── style.css │ ├─
 
 ### Étape 1 : Cloner le dépôt
 ```sh
-git clone https://github.com/TonNomUtilisateur/Ynov-PhP.git
+git clone https://github.com/Giovanni31000/CV-php.git
 cd Ynov-PhP
 Étape 2 : Configurer le fichier .env
 Créez un fichier .env à la racine du projet avec le contenu suivant :
