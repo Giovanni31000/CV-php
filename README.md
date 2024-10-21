@@ -10,9 +10,6 @@ Ce projet est un site web de CV/Portfolio développé en PHP. Il permet aux util
 ## Structure des Fichiers
 CV-PHP/ ├── app/ │ ├── css/ │ │ └── style.css │ ├── js/ │ │ └── scripts.js │ ├── index.html │ └── index.php ├── services/ │ ├── nginx/ │ │ └── nginx.conf │ ├── php/ │ │ └── Dockerfile ├── docker-compose.yaml ├── .env ├── .gitignore ├── README.md
 
-
-Copier
-
 ## Installation
 
 ### Étape 1 : Cloner le dépôt
