@@ -19,6 +19,9 @@ WORKDIR /var/www/html
 # Attribuer les permissions nécessaires
 RUN chown -R www-data:www-data /var/www/html
 
+# Installation des dépendances PHP via Composer
+RUN composer install --no-dev --optimize-autoloader
+
 # Exposition du port
 EXPOSE 9000
 

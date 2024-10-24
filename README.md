@@ -7,9 +7,6 @@ Ce projet est un site web de CV/Portfolio développé en PHP. Il permet aux util
 - Docker Desktop installé
 - Compte GitHub pour cloner le dépôt
 
-## Structure des Fichiers
-CV-PHP/ ├── app/ │ ├── css/ │ │ └── style.css │ ├── js/ │ │ └── scripts.js │ ├── index.html │ └── index.php ├── services/ │ ├── nginx/ │ │ └── nginx.conf │ ├── php/ │ │ └── Dockerfile ├── docker-compose.yaml ├── .env ├── .gitignore ├── README.md
-
 ## Installation
 
 ### Étape 1 : Cloner le dépôt
@@ -43,16 +40,16 @@ docker-compose up --build
 Ouvrez votre navigateur et allez à http://localhost pour voir le site web.
 
 ### Étape 5 : Configurer la base de données
-Utilisez Adminer pour vous connecter à MariaDB et créer les tables nécessaires pour les utilisateurs, les projets...
+Utilisez Adminer pour vous connecter et créer les tables nécessaires pour les utilisateurs, les projets...
 
 ### Étape 6 : Développement PHP
 Ajoutez les fonctionnalités PHP nécessaires pour l'authentification, la gestion de CV, les projets, etc.
 
-Commiter et pusher les modifications
+Commiter et pusher les modifications sur une nouvelle branche
 git add .
 git commit -m "Initial commit with Docker setup"
-git push origin main
-Outils et Technologies Utilisés
+git push
+Outils et technologies utilisés
 PHP : Langage de programmation principal.
 
 Docker : Conteneurisation des services.

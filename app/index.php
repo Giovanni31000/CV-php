@@ -5,6 +5,7 @@ function isLoggedIn() {
     return isset($_SESSION['user']);
 }
 ?>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -15,17 +16,15 @@ function isLoggedIn() {
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header class="bg-primary text-white text-center py-3">
+    <header class="text-white text-center">
         <h1>Bienvenue sur mon CV</h1>
     </header>
-    
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+    <nav class="navbar navbar-expand-lg">
         <div class="container">
             <a class="navbar-brand" href="#">Mon CV</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="navbar" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link" href="index.php">Accueil</a>
@@ -47,6 +46,12 @@ function isLoggedIn() {
                     </li>
                 </ul>
             </div>
-            <?php if (isLoggedIn()): ?>
-                <span class="navbar-text">
-                    Bonjour, <?php echo $_SESSION['user']['first_name']; ?> <?php echo $_SESSION['user']['last_name'];
+            <span class="navbar-text">
+                <a href="<?php echo isLoggedIn() ? 'logout.php' : 'login.php'; ?>">
+                    <?php echo isLoggedIn() ? 'Déconnexion' : 'Connexion'; ?>
+                </a>
+            </span>
+        </div>
+    </nav>
+</body>
+</html>
